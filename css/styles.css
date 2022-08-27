@@ -15,6 +15,8 @@
     --color-adress-ftr: #FFFFFF;
     --btn-portfolio-bcg: #F5F4FA;
     --bcg-hero: #C4C4C4;
+    --color-text-white: #ffffff;
+    --bcg-color-grey: #f5f5f5;
 }
 
 .main{
@@ -117,10 +119,10 @@ ul,ol{
     color: var(--links-h-f-color);
 }
 
-.post{
+.post-tel{
     height: 12px;
     width: 16px;
-    fill: #757575;
+    fill: currentColor;
 
 }
 
@@ -196,6 +198,19 @@ ul,ol{
     background-color: var(--bcg-white);
 }
 
+.features-box{    
+    height: 120px;
+    width: 270px;
+    background-color:#F5F4FA;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}   
+
+.features-icon{
+    height: 70px;
+    width: 70px;
+}    
+
 .visually-hidden{
     position: absolute;
     white-space: nowrap;
@@ -214,15 +229,8 @@ ul,ol{
     column-gap: 30px;
 }
 
-.features-title,
 .features-subtitle{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     margin-bottom: 10px;
-    color: var(--color-heding);
 }
 
 .features-text{
@@ -251,7 +259,8 @@ ul,ol{
 }
 
 .portfolio-title,
-.team-tatle{
+.team-tatle,
+.title-client{
     text-align: center;
     margin-bottom: 50px;
     font-weight: 700;
@@ -280,11 +289,15 @@ ul,ol{
     background-color: var(--bcg-white);
 }
 
-.data{
+.data{   
+    display: block;
+    align-items: center;
+    justify-content: center;
     padding: 30px;
 }
 
 .team-name{
+    text-align: center;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -294,17 +307,101 @@ ul,ol{
 }
 
 .team-profession{
+    text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
     color: var(--secondary-color-text);
+}
+
+.list-social{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.frame-card-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    
+}
+
+.frame-card-social:hover,
+.frame-card-social:focus{
+    background-color: var(--links-h-f-color);
+}
+
+.frame-card-social:hover .card-social,
+.frame-card-social:focus .card-social{
+    fill: var(--bcg-white);
+}
+
+.card-social{
+    display: flex;
+    height: 20px;
+    width: 20px;
+    fill: #AFB1B8;
+}
+
+/* Постійні кліенти */
+
+/* стілі заголовку тут:
+.portfolio-title,
+.team-tatle,
+.title-client*/
+
+.client{
+    display: flex;    
+    column-gap: 30px;
+}
+
+
+.client-container{
+    padding-top: 55px;
+    padding-bottom: 125px;
+}
+
+.logo-client{
+    height: 60px;
+    width: 106px;
+}
+
+.client-frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    background-color: var(--bcg-white);
+    padding: 16px 32px;
+}
+
+
+.client-frame:hover,
+.client-frame:focus{
+    fill: #2196F3;
+}
+
+.client-frame:hover,
+.client-frame:focus{
+    border: 1px solid  #2196F3;
 }
 
 /* підвал */
 
 
 .footer{
+    display: flex;
     padding: 60px 0;
     background-color:var(--ftr-color);
 }
@@ -326,6 +423,8 @@ ul,ol{
 .footer-logo-studio{
     color: var(--logo-part-two-ftr);
 }
+
+
 
 
 /* контактні данні */
@@ -363,6 +462,52 @@ ul,ol{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--color-text-white);
+}
+
+.footer-social-list{
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social:hover,
+.footer-social:focus{
+    background-color: var( --links-h-f-color);
+}
+.footer-social-icon{
+    height: 20px;
+    width: 20px;
+    fill: var(--color-text-white);
+}
+
+.footer-info{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-info-contacts{
+    margin-right: 70px;
 }
 
 
@@ -407,7 +552,7 @@ ul,ol{
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    background-color: #F5F4FA;
+    background-color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -424,18 +569,22 @@ ul,ol{
 }
 
 .data-portfolio-card{
+    border: solid 1px #EEEEEE;
+    border-top: none;   
     padding: 20px 24px;
 }
 
-
 .page-portfolio-card:hover,
-.page-portfolio-card:focus
+.page-portfolio-card:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}    
 
 img{
     display: block;
 }
 
 .page-portfolio-card{
+    display: block;
     background-color: var(--bcg-white);
 }
 
