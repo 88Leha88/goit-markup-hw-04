@@ -58,7 +58,7 @@ ul,ol{
 /* шапка */
 
 .header{
-    
+    border-bottom:  1px solid #ECECEC;
     background-color: var(--bcg-white);
 }
 
@@ -66,7 +66,7 @@ ul,ol{
     display: flex;
     column-gap: 50px;
     align-items: center;
-}
+}    
 
 .header-page{
     justify-content: space-between;
@@ -114,16 +114,25 @@ ul,ol{
 
 /* контакти */
 
+
 .header-contacts:hover,
 .header-contacts:focus{
     color: var(--links-h-f-color);
 }
 
+.tel-post{
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    fill: currentColor;
+
+}
+
 .post-tel{
     height: 12px;
     width: 16px;
+    margin-right: 10px;
     fill: currentColor;
-
 }
 
 .header-contacts{
@@ -198,11 +207,13 @@ ul,ol{
     background-color: var(--bcg-white);
 }
 
-.features-box{    
+.features-box{  
+    display: flex;  
+    align-items: center;
+    justify-content: center;
     height: 120px;
     width: 270px;
     background-color:#F5F4FA;
-    padding: 25px 100px;
     margin-bottom: 30px;
 }   
 
@@ -383,7 +394,6 @@ ul,ol{
     width: 170px;
     height: 92px;
     background-color: var(--bcg-white);
-    padding: 16px 32px;
 }
 
 
@@ -515,9 +525,7 @@ ul,ol{
 /* сторінка портфоліо */
 /* шапка та підвал такіж самі */
 
-.portfolio-header{
-    border-bottom: 1px solid #ECECEC;
-}
+
 
 /* кнопка */
 
@@ -552,7 +560,7 @@ ul,ol{
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    background-color: #FFFFFF;
+    background-color: #F5F4FA;
     cursor: pointer;
 }
 
